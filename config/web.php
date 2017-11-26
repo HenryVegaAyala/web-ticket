@@ -23,6 +23,10 @@ $config = [
                 ],
             ],
         ],
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            'sessionTable' => 'session',
+        ],
         'assetsAutoCompress' =>
             [
                 'class' => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
@@ -55,9 +59,15 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'defaultTimeZone' => 'UTC',
+            'timeZone' => 'America/Lima',
+        ],
         'user' => [
             'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true,
+            'enableAutoLogin' => false,
+            'enableSession' => true,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -88,6 +98,23 @@ $config = [
                 ['pattern' => '/login', 'route' => '/site/login', 'suffix' => ''],
             ],
         ],
+
+    ],
+    'as beforeRequest' => [
+        'class' => 'yii\filters\AccessControl',
+        'rules' => [
+            [
+                'allow' => true,
+                'actions' => ['login', 'forgot'],
+            ],
+            [
+                'allow' => true,
+                'roles' => ['@'],
+            ],
+        ],
+        'denyCallback' => function () {
+            return Yii::$app->response->redirect(['site/login']);
+        },
     ],
     'params' => $params,
 ];

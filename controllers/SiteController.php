@@ -5,10 +5,8 @@ namespace app\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
-use app\models\ContactForm;
 
 class SiteController extends Controller
 {
@@ -56,7 +54,6 @@ class SiteController extends Controller
 
     /**
      * Displays homepage.
-     *
      * @return string
      */
     public function actionIndex()
@@ -66,8 +63,7 @@ class SiteController extends Controller
 
     /**
      * Login action.
-     *
-     * @return Response|string
+     * @return string
      */
     public function actionLogin()
     {
@@ -79,6 +75,7 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
+
         return $this->render('login', [
             'model' => $model,
         ]);
@@ -86,41 +83,12 @@ class SiteController extends Controller
 
     /**
      * Logout action.
-     *
-     * @return Response
+     * @return string
      */
     public function actionLogout()
     {
         Yii::$app->user->logout();
 
         return $this->goHome();
-    }
-
-    /**
-     * Displays contact page.
-     *
-     * @return Response|string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
     }
 }

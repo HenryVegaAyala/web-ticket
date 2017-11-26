@@ -25,14 +25,13 @@ AppAsset::register($this);
         <?php echo Html::cssFile('@web/css/ticket.min.css?v=' . filemtime(Yii::getAlias('@webroot/css/ticket.min.css'))) ?>
         <?php $this->head() ?>
     </head>
-    <body>
     <?php $this->beginBody() ?>
-
-    <?php echo $content ?>
-
-    <?php echo $this->render('footer') ?>
+    <?php if (Yii::$app->user->isGuest) { ?>
+        <?php echo $content ?>
+    <?php } else { ?>
+        <?php echo $this->render('footer') ?>
+    <?php } ?>
     <?php echo Html::jsFile('@web/js/all.js?v=' . filemtime(Yii::getAlias('@webroot/js/all.js'))) ?>
     <?php $this->endBody() ?>
-    </body>
     </html>
 <?php $this->endPage() ?>

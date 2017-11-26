@@ -3,5 +3,6 @@
   "vendor/bower-asset/bootstrap/dist/js/bootstrap.min.js",
   "vendor/yiisoft/yii2/assets/yii.js",
   "vendor/yiisoft/yii2/assets/yii.validation.js",
-  "vendor/yiisoft/yii2/assets/yii.activeForm.js"
+  "vendor/yiisoft/yii2/assets/yii.activeForm.js",
+  "web/repositorio/rocket/rocket.min.js"
 ]

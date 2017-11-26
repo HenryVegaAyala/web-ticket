@@ -4,6 +4,10 @@ module.exports = function (grunt) {
         concat_css: {
             all: {
                 src: [
+                    'web/repositorio/bootstrap/dist/css/bootstrap.min.css',
+                    'web/repositorio/font-awesome/css/font-awesome.min.css',
+                    'web/repositorio/nprogress/nprogress.css',
+                    'web/repositorio/animate/animate.min.css',
                     'web/css/site.css'
                 ],
                 dest: 'web/css/ticket.css'
