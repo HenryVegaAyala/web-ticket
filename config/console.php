@@ -10,6 +10,7 @@ $config = [
     'controllerNamespace' => 'app\commands',
     'components' => [
         'assetManager' => [
+            'bundles' => false,
             'linkAssets' => false,
             'appendTimestamp' => true,
             'converter' => [
