@@ -88,17 +88,79 @@ $config = [
         'db' => $db,
 
         'urlManager' => [
-            'class' => 'yii\web\UrlManager',
-            'baseUrl' => '/',
+            //'class' => 'yii\web\UrlManager',
+            //'baseUrl' => '/',
+            //'enablePrettyUrl' => true,
+            //'showScriptName' => false,
+            //'enableStrictParsing' => true,
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                ['pattern' => '/', 'route' => '/site/index', 'suffix' => ''],
-                ['pattern' => '/login', 'route' => '/site/login', 'suffix' => ''],
+
+                /**Sesion**/
+                '/login' => 'site/login',
+                '/logout/<id:\d+>' => '/site/logout',
+
+                /**home**/
+                '/' => 'site/index',
+
+                /**Cliente**/
+                '/cliente-nuevo' => '/cliente/create',
+                '/lista-cliente' => '/cliente/index',
+                '/importar-cliente' => '/cliente/import',
+                '/exportar-cliente' => '/cliente/export',
+                '/actualizar-cliente/<id:\d+>' => '/cliente/update',
+                '/ver-cliente/<id:\d+>' => '/cliente/view',
+                '/eliminar-cliente/<id:\d+>' => '/cliente/delete',
+
+                /**Usuario**/
+                '/nuevo-usuario' => '/user/create',
+                '/lista-usuario' => '/user/index',
+                '/actualizar-usuario/<id:\d+>' => '/user/update',
+                '/exportar-analistas' => '/user/export',
+                '/inactivar/<id:\d+>' => '/user/status',
+                '/eliminar-usuario/<id:\d+>' => '/user/delete',
+                '/mi-cuenta/<id:\d+>' => '/user/change',
+
+                /**Indicencia**/
+                '/nueva-incidencia' => '/incidencia/create',
+                '/lista-incidencia' => '/incidencia/index',
+                '/actualizar-incidencia/<id:\d+>' => '/incidencia/update',
+                '/eliminar-incidencia/<id:\d+>' => '/incidencia/delete',
+
+                ///**Sesion**/
+                //['pattern' => '/login', 'route' => '/site/login', 'suffix' => '.php'],
+                //['pattern' => '/logout/<id:\d+>', 'route' => '/site/logout'],
+                //
+                ///**home**/
+                //['pattern' => '/', 'route' => '/site/index', 'suffix' => ''],
+                //
+                ///**Usuario**/
+                //['pattern' => '/nuevo-usuario', 'route' => '/user/create', 'suffix' => '.php'],
+                //['pattern' => '/lista-usuario', 'route' => '/user/index', 'suffix' => '.php'],
+                //['pattern' => '/actualizar-usuario/<id:\d+>', 'route' => '/user/update'],
+                //['pattern' => '/exportar-analistas', 'route' => '/user/export'],
+                //['pattern' => '/inactivar/<id:\d+>', 'route' => '/user/status'],
+                //['pattern' => '/eliminar-usuario/<id:\d+>', 'route' => '/user/delete'],
+                //['pattern' => '/actualizar/datos/<id:\d+>', 'route' => '/user/change'],
+                //
+                ///**Indicencia**/
+                //['pattern' => '/nueva-incidencia', 'route' => '/incidencia/create', 'suffix' => '.php'],
+                //['pattern' => '/lista-incidencia', 'route' => '/incidencia/index', 'suffix' => '.php'],
+                //['pattern' => '/actualizar-incidencia/<id:\d+>', 'route' => '/incidencia/update'],
+                //['pattern' => '/eliminar-incidencia/<id:\d+>', 'route' => '/incidencia/delete'],
+                //
+                ///**Cliente**/
+                //['pattern' => '/nuevo-cliente', 'route' => '/cliente/create', 'suffix' => '.php'],
+                //['pattern' => '/lista-cliente', 'route' => '/cliente/index', 'suffix' => '.php'],
+                //['pattern' => '/importar-cliente', 'route' => '/cliente/import', 'suffix' => '.php'],
+                //['pattern' => '/exportar-cliente', 'route' => '/cliente/export', 'suffix' => '.php'],
+                //['pattern' => '/actualizar-cliente/<id:\d+>', 'route' => '/cliente/update'],
+                //['pattern' => '/ver-cliente/<id:\d+>', 'route' => '/cliente/view'],
+                //['pattern' => '/eliminar-cliente/<id:\d+>', 'route' => '/cliente/delete'],
             ],
         ],
-
     ],
     'as beforeRequest' => [
         'class' => 'yii\filters\AccessControl',

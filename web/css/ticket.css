@@ -585,10 +585,6 @@ td,th {
   content: "\e194";
 }
 
-.glyphicon-registration-mark:before {
-  content: "\e195";
-}
-
 .glyphicon-open-file:before {
   content: "\e203";
 }
@@ -1791,7 +1787,7 @@ select[multiple].input-lg,textarea.input-lg {
 
 .help-block {
   display: block;
-  margin-top: 5px;
+  margin-top: -10px;
   margin-bottom: 10px;
   color: #737373;
 }
@@ -4612,10 +4608,6 @@ button.close {
 
 .fa-child:before {
   content: "\f1ae";
-}
-
-.fa-paw:before {
-  content: "\f1b0";
 }
 
 .fa-file-image-o:before {
@@ -9127,10 +9119,6 @@ ul.user_data li .progress {
   background: #F7F7F7;
 }
 
-.login .fa-paw {
-  font-size: 26px;
-}
-
 a.hiddenanchor {
   display: none;
 }
@@ -9143,15 +9131,9 @@ a.hiddenanchor {
   position: relative;
 }
 
-.registration_form,.login_form {
+.login_form {
   position: absolute;
   top: 0px;
-  width: 100%;
-}
-
-.registration_form {
-  z-index: 21;
-  opacity: 0;
   width: 100%;
 }
 
@@ -9159,13 +9141,7 @@ a.hiddenanchor {
   z-index: 22;
 }
 
-#signup:target ~ .login_wrapper .registration_form,#signin:target ~ .login_wrapper .login_form {
-  z-index: 22;
-  animation-name: fadeInLeft;
-  animation-delay: .1s;
-}
-
-#signup:target ~ .login_wrapper .login_form,#signin:target ~ .login_wrapper .registration_form {
+#signup:target ~ .login_wrapper .login_form {
   animation-name: fadeOutLeft;
 }
 
@@ -9501,3 +9477,17 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 /** bootstrap-datetimepicker **/
 
 /** /bootstrap-datetimepicker **/
+
+@media screen and (max-width: 414px) and (min-width: 320px) {
+  .space-container {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .login_content h1 {
+    font: normal 25px Helvetica, Arial, sans-serif;
+    letter-spacing: -0.08em;
+    line-height: 20px;
+    margin: 3px 0 24px;
+  }
+}

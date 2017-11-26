@@ -62,11 +62,15 @@ $config = [
     'params' => $params,
 
     'controllerMap' => [
+        'clean-vendors' => [
+            'class' => 'mbrowniebytes\yii2cleanvendors\CleanVendorsController',
+        ],
         'fixture' => [
             'class' => 'yii\faker\FixtureController',
         ],
-        'clean-vendors' => [
-            'class' => 'mbrowniebytes\yii2cleanvendors\CleanVendorsController',
+        'migrate' => [
+            'class' => yii\console\controllers\MigrateController::class,
+            'templateFile' => '@jamband/schemadump/template.php',
         ],
     ],
 
