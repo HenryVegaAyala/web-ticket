@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
@@ -10,9 +10,40 @@ $config = [
     'sourceLanguage' => 'es',
     'language' => 'es',
     'timeZone' => 'America/Lima',
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm' => '@vendor/npm-asset',
+    ],
+    'modules' => [
+        'gridview' => [
+            'class' => 'kartik\grid\Module',
+        ],
+
+        'dynamicrelations' => [
+            'class' => '\synatree\dynamicrelations\Module',
+        ],
+
+        'datecontrol' => [
+            'class' => 'kartik\datecontrol\Module',
+
+            'displaySettings' => [
+                'date' => 'd-m-Y',
+                'time' => 'H:i:s A',
+                'datetime' => 'd-m-Y H:i:s A',
+            ],
+
+            'saveSettings' => [
+                'date' => 'd-m-Y',
+                'time' => 'H:i:s',
+                'datetime' => 'd-m-Y H:i:s A',
+            ],
+
+            'autoWidget' => true,
+
+        ],
+    ],
     'components' => [
         'assetManager' => [
-            'bundles' => false,
             'linkAssets' => false,
             'appendTimestamp' => true,
             'converter' => [
@@ -54,7 +85,7 @@ $config = [
             ],
         'request' => [
             'baseUrl' => str_replace('/web', '', (new \yii\web\Request)->getBaseUrl()),
-            'cookieValidationKey' => '9eLJtiz1vscva8KRu0Db81iM3N_BUF4B',
+            'cookieValidationKey' => 'MfUsCsKe7ESAiH25TzeolSVxyAiIyCIV',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -161,6 +192,7 @@ $config = [
                 //['pattern' => '/eliminar-cliente/<id:\d+>', 'route' => '/cliente/delete'],
             ],
         ],
+
     ],
     'as beforeRequest' => [
         'class' => 'yii\filters\AccessControl',
@@ -185,13 +217,14 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
-        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-        //'allowedIPs' => ['127.0.0.1', '::1'],
+        'generators' => [
+            'kartikgii-crud' => ['class' => 'warrence\kartikgii\crud\Generator'],
+        ],
     ];
 }
 

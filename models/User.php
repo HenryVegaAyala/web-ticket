@@ -61,7 +61,9 @@ class User extends ActiveRecord implements IdentityInterface
             [['correo'], 'email', 'message' => self::FIELD_VALID],
             ['contrasena', 'match', 'pattern' => "/^.{6,255}$/", 'message' => self::MESSAGE_MIN_6_PW],
             ['contrasena_desc', 'match', 'pattern' => "/^.{6,255}$/", 'message' => self::MESSAGE_MIN_6_PW_REP],
+
             ['contrasena_desc', 'compare', 'compareAttribute' => 'contrasena', 'message' => self::MESSAGE_COMPARE],
+
             ['change_password_repeat', 'compare', 'compareAttribute' => 'change_password', 'message' => self::MESSAGE_COMPARE],
         ];
     }

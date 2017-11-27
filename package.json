@@ -1,8 +1,8 @@
 {
-  "name": "cbtexturas",
+  "name": "agenda",
   "version": "1.0.0",
-  "description": "pagina web cbtexturas",
-  "main": "index.js",
+  "description": "Yii 2 Basic Project Template ============================",
+  "main": "Gruntfile.js",
   "directories": {
     "test": "tests"
   },
@@ -21,18 +21,15 @@
     "typescript": "^2.5.2"
   },
   "devDependencies": {
-    "eslint": "^4.11.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-standard": "^3.0.1",
     "grunt": "^0.4.5",
-    "grunt-concat-css": "^0.3.2",
     "grunt-concat-sourcemap": "^0.4.3",
-    "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.2.1",
@@ -41,27 +38,24 @@
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-node-minify": "^1.3.1",
-    "grunt-purifycss": "^0.1.2",
     "grunt-sass": "^2.0.0",
-    "grunt-svgmin": "^4.0.0",
     "grunt-typescript": "^0.8.0",
     "jshint-stylish": "^2.2.1",
-    "typescript": "^2.5.3"
+    "typescript": "^2.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HenryVegaAyala/cbtextturas.git"
+    "url": "git+https://github.com/HenryVegaAyala/agenda.git"
   },
-  "author": "Henry Pablo Vega Ayala",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HenryVegaAyala/cbtextturas/issues"
+    "url": "https://github.com/HenryVegaAyala/agenda/issues"
   },
-  "homepage": "https://github.com/HenryVegaAyala/cbtextturas#readme"
+  "homepage": "https://github.com/HenryVegaAyala/agenda#readme"
 }

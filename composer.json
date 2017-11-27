@@ -20,8 +20,21 @@
     "yiisoft/yii2-swiftmailer": "~2.0.0",
     "nesbot/carbon": "^1.22",
     "insolita/yii2-migration-generator": "~2.3",
+    "mbrowniebytes/yii2-clean-vendors": "dev-master",
+    "bryglen/yii2-sendgrid": "*",
+    "undefinedor/yii2-cached-active-record": "^0.0.3",
+    "yiisoft/yii2-faker": "^2.0",
+    "tebazil/yii2-console-runner": "^0.0.0",
+    "omnilight/yii2-scheduling": "*",
     "skeeks/yii2-assets-auto-compress": "*",
-    "mbrowniebytes/yii2-clean-vendors": "dev-master"
+    "mootensai/yii2-enhanced-gii": "dev-master",
+    "kartik-v/yii2-tree-manager": "dev-master",
+    "johnitvn/yii2-ajaxcrud": "*",
+    "warrence/yii2-kartikgii": "dev-master",
+    "setasign/fpdf": "1.8.1",
+    "kartik-v/yii2-widget-growl": "*",
+    "wbraganca/yii2-dynamicform": "dev-master",
+    "kartik-v/yii2-date-range": "dev-master"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.0.0",
@@ -30,7 +43,8 @@
 
     "codeception/base": "^2.2.3",
     "codeception/verify": "~0.3.1",
-    "codeception/specify": "~0.4.3"
+    "codeception/specify": "~0.4.3",
+    "jamband/yii2-schemadump": "*"
   },
   "config": {
     "process-timeout": 1800,
@@ -48,6 +62,9 @@
     "post-create-project-cmd": [
       "yii\\composer\\Installer::postCreateProject",
       "yii\\composer\\Installer::postInstall"
+    ],
+    "post-update-cmd": [
+      "php yii clean-vendors"
     ]
   },
   "extra": {

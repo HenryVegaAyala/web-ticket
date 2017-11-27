@@ -1,16 +1,15 @@
-<?php
+﻿<?php
 
-$params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
+$params = require(__DIR__ . '/params.php');
+$db = require(__DIR__ . '/db.php');
 
 $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'assetsAutoCompress'],
+    'bootstrap' => ['log','assetsAutoCompress'],
     'controllerNamespace' => 'app\commands',
     'components' => [
         'assetManager' => [
-            'bundles' => false,
             'linkAssets' => false,
             'appendTimestamp' => true,
             'converter' => [
@@ -23,27 +22,27 @@ $config = [
         ],
         'assetsAutoCompress' =>
             [
-                'class' => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
-                'enabled' => true,
-                'readFileTimeout' => 3,
-                'jsCompress' => true,
-                'jsCompressFlaggedComments' => true,
-                'cssCompress' => true,
-                'cssFileCompile' => true,
-                'cssFileRemouteCompile' => false,
-                'cssFileCompress' => true,
-                'cssFileBottom' => false,
-                'cssFileBottomLoadOnJs' => false,
-                'jsFileCompile' => true,
-                'jsFileRemouteCompile' => false,
-                'jsFileCompress' => true,
+                'class'                         => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
+                'enabled'                       => true,
+                'readFileTimeout'               => 3,
+                'jsCompress'                    => true,
+                'jsCompressFlaggedComments'     => true,
+                'cssCompress'                   => true,
+                'cssFileCompile'                => true,
+                'cssFileRemouteCompile'         => false,
+                'cssFileCompress'               => true,
+                'cssFileBottom'                 => false,
+                'cssFileBottomLoadOnJs'         => false,
+                'jsFileCompile'                 => true,
+                'jsFileRemouteCompile'          => false,
+                'jsFileCompress'                => true,
                 'jsFileCompressFlaggedComments' => true,
-                'htmlCompress' => true,
-                'noIncludeJsFilesOnPjax' => true,
-                'htmlCompressOptions' =>
+                'htmlCompress'                  => true,
+                'noIncludeJsFilesOnPjax'        => true,
+                'htmlCompressOptions'           =>
                     [
                         'extra' => false,
-                        'no-comments' => true,
+                        'no-comments' => true
                     ],
             ],
         'cache' => [
@@ -71,6 +70,15 @@ $config = [
         'migrate' => [
             'class' => yii\console\controllers\MigrateController::class,
             'templateFile' => '@jamband/schemadump/template.php',
+    ],
+        'schemadump' => [
+            'class' => jamband\schemadump\SchemaDumpController::class,
+            'db' => [
+                'class' => yii\db\Connection::class,
+                'dsn' => 'mysql:host=localhost;dbname=sis_agenda',
+                'username' => 'root',
+                'password' => '',
+            ],
         ],
     ],
 

@@ -7,30 +7,30 @@ use yii\db\ActiveRecord;
 /**
  * This is the model class for table "incidencia".
  *
- * @property integer id
- * @property integer cliente_id
- * @property integer empresa_id
- * @property string notas
- * @property string resumen
- * @property string servico
- * @property string ci
- * @property string fecha_deseada
- * @property string impacto
- * @property string urgencia
- * @property string prioridad
- * @property string tipo_incidencia
- * @property string fuente_reportada
- * @property string fecha_digitada
- * @property string fecha_modificada
- * @property string fecha_eliminada
- * @property string usuario_digitado
- * @property string usuario_modificado
- * @property string usuario_eliminado
- * @property integer estado
- * @property string ip
- * @property string host
- *
- * @property Cliente $cliente
+ * @property integer $id
+ * @property integer $usuario_id
+ * @property string $empresa
+ * @property string $cliente
+ * @property string $contacto
+ * @property string $notas
+ * @property string $resumen
+ * @property string $servico
+ * @property string $ci
+ * @property string $fecha_deseada
+ * @property string $impacto
+ * @property string $urgencia
+ * @property string $prioridad
+ * @property string $tipo_incidencia
+ * @property string $fuente_reportada
+ * @property string $fecha_digitada
+ * @property string $fecha_modificada
+ * @property string $fecha_eliminada
+ * @property string $usuario_digitado
+ * @property string $usuario_modificado
+ * @property string $usuario_eliminado
+ * @property integer $estado
+ * @property string $ip
+ * @property string $host
  */
 class Incidencia extends ActiveRecord
 {
@@ -50,8 +50,11 @@ class Incidencia extends ActiveRecord
         return [
             [
                 [
-                    'cliente_id',
-                    'empresa_id',
+                    'id',
+                    'usuario_id',
+                    'empresa',
+                    'cliente',
+                    'contacto',
                     'notas',
                     'resumen',
                     'servico',
@@ -65,10 +68,13 @@ class Incidencia extends ActiveRecord
                 ],
                 'required',
             ],
-            [['cliente_id', 'empresa_id', 'estado'], 'integer'],
+            [['id', 'usuario_id', 'estado'], 'integer'],
             [['fecha_digitada', 'fecha_modificada', 'fecha_eliminada'], 'safe'],
             [
                 [
+                    'empresa',
+                    'cliente',
+                    'contacto',
                     'notas',
                     'resumen',
                     'servico',
@@ -84,15 +90,6 @@ class Incidencia extends ActiveRecord
                 'string',
                 'max' => 150,
             ],
-            [['usuario_digitado', 'usuario_modificado', 'usuario_eliminado'], 'string', 'max' => 50],
-            [['ip'], 'string', 'max' => 30],
-            [
-                ['cliente_id'],
-                'exist',
-                'skipOnError' => true,
-                'targetClass' => Cliente::className(),
-                'targetAttribute' => ['cliente_id' => 'id'],
-            ],
         ];
     }
 
@@ -103,8 +100,10 @@ class Incidencia extends ActiveRecord
     {
         return [
             'id' => 'ID',
-            'cliente_id' => 'Cliente ID',
-            'empresa_id' => 'Empresa ID',
+            'usuario_id' => 'Usuario ID',
+            'empresa' => 'Empresa',
+            'cliente' => 'Cliente',
+            'contacto' => 'Contacto',
             'notas' => 'Notas',
             'resumen' => 'Resumen',
             'servico' => 'Servico',
@@ -127,17 +126,6 @@ class Incidencia extends ActiveRecord
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getCliente()
-    {
-        return $this->hasOne(Cliente::className(), ['id' => 'cliente_id']);
-    }
-
-    /**
-     * @return array
-     */
     public static function servicio()
     {
         return [
@@ -145,72 +133,10 @@ class Incidencia extends ActiveRecord
         ];
     }
 
-    /**
-     * @return array
-     */
     public static function ci()
     {
         return [
             0 => 'CI_DUMMY',
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public static function impacto()
-    {
-        return [
-            'Urgente' => 'Urgente',
-            'Alta' => 'Alta',
-            'Media' => 'Media',
-            'Baja' => 'Baja',
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public static function urgencia()
-    {
-        return [
-            'Urgente' => 'Urgente',
-            'Alta' => 'Alta',
-            'Media' => 'Media',
-            'Baja' => 'Baja',
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public static function prioridad()
-    {
-        return [
-            'Urgente' => 'Urgente',
-            'Alta' => 'Alta',
-            'Media' => 'Media',
-            'Baja' => 'Baja',
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public static function tipoIncidencia()
-    {
-        return [
-            'Petición de serv.' => 'Petición de serv.',
-        ];
-    }
-
-    /**
-     * @return array
-     */
-    public static function fuenteReportada()
-    {
-        return [
-            'Correo Electronico' => 'Correo Electronico',
         ];
     }
 }

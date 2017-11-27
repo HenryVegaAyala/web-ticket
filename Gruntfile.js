@@ -1,93 +1,83 @@
-/* eslint-disable quotes */
+const mozjpeg = require('imagemin-pngquant')
 module.exports = function (grunt) {
-    grunt.initConfig({
-        concat_css: {
-            all: {
-                src: [
-                    'web/repositorio/bootstrap/dist/css/bootstrap.min.css',
-                    'web/repositorio/font-awesome/css/font-awesome.min.css',
-                    'web/repositorio/nprogress/nprogress.css',
-                    'web/repositorio/animate/animate.min.css',
-                    'web/css/site.css'
-                ],
-                dest: 'web/css/ticket.css'
-            }
+  grunt.initConfig({
+    uglify: {
+      options: {
+        compress: true,
+        separator: ';'
+      },
+      dist: {
+        src: 'web/js/agenda.js',
+        dest: 'web/js/agenda.min.js'
+      }
+    },
+    less: {
+      options: {
+        compress: true,
+        style: 'expanded'
+      },
+      dist: {
+        src: 'web/css/custom.css',
+        dest: 'web/css/custom.scss'
+      }
+    },
+    imagemin: {
+      static: {
+        options: {
+          optimizationLevel: 7,
+          svgoPlugins: [{removeViewBox: false}],
+          use: [mozjpeg()]
         },
-        purifycss: {
-            options: {},
-            target: {
-                src: ['views/layouts/*.php', 'views/site/*.php', 'web/js/all.js'],
-                css: ['web/css/ticket.css'],
-                dest: 'web/css/ticket.css'
-            }
-        },
-        cssmin: {
-            site: {
-                files: [{
-                    expand: true,
-                    cwd: 'web/css/',
-                    src: ['ticket.css'],
-                    dest: 'web/css/',
-                    ext: '.min.css'
-                }]
-            }
-        },
-        concat_sourcemap: {
-            options: {
-                sourcesContent: true
-            },
-            all: {
-                files: {
-                    'web/js/all.js': grunt.file.readJSON('assets/js/all.json')
-                }
-            }
-        },
-        minified: {
-            files: {
-                src: ['web/js/all.js'],
-                dest: 'web/js/'
-            },
-            options: {
-                sourcemap: true,
-                allinone: false
-            }
-        },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'web/img/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'web/img/'
-                }]
-            }
-        },
-        watch: {
-            js: {
-                files: ['assets/js/**/*.js', 'assets/js/all.json'],
-                tasks: ['concat_sourcemap', 'uglify:lib'],
-                options: {
-                    livereload: true
-                }
-            },
-            less: {
-                files: ['web/css/site.css'],
-                tasks: ['concat_css', 'purifycss', 'cssmin'],
-                options: {
-                    livereload: true
-                }
-            }
+        files: {
+          'web/images/excel_download.png': 'web/images/excel_download.png',
+          'web/images/excel_import.png': 'web/images/excel_import.png',
+          'web/images/usuario_hombre.png': 'web/images/usuario_hombre.png',
+          'web/images/usuario_mujer.png': 'web/images/usuario_mujer.png',
+          'web/images/usuario_default.png': 'web/images/usuario_default.png',
         }
-    }),
+      },
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'web/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'web/images/'
+        }]
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          'views/site/error.php': 'views/site/error.php',
+          'views/site/index.php': 'views/site/index.php',
+          'views/site/login.php': 'views/site/login.php',
 
-        grunt.loadNpmTasks('grunt-concat-css'),
-        grunt.loadNpmTasks('grunt-contrib-cssmin'),
-        grunt.loadNpmTasks('grunt-purifycss'),
-        grunt.loadNpmTasks('grunt-concat-sourcemap'),
-        grunt.loadNpmTasks('grunt-minified'),
-        grunt.loadNpmTasks('grunt-contrib-imagemin'),
-        grunt.loadNpmTasks('grunt-contrib-watch'),
+          // 'views/layouts/activity.php': 'views/layouts/activity.php',
+          'views/layouts/footer.php': 'views/layouts/footer.php',
+          'views/layouts/header.php': 'views/layouts/header.php',
+          'views/layouts/main.php': 'views/layouts/main.php',
 
-        grunt.registerTask('build', ['concat_css', 'purifycss', 'cssmin', 'concat_sourcemap', 'minified', 'imagemin']),
-        grunt.registerTask('default', ['watch'])
+          'views/user/create.php': 'views/user/create.php',
+          'views/user/_form.php': 'views/user/_form.php',
+        }
+      },
+    }
+  }),
+
+  grunt.loadNpmTasks('grunt-typescript'),
+  grunt.loadNpmTasks('grunt-concat-sourcemap'),
+  grunt.loadNpmTasks('grunt-contrib-watch'),
+  grunt.loadNpmTasks('grunt-contrib-less'),
+  grunt.loadNpmTasks('grunt-contrib-uglify'),
+  grunt.loadNpmTasks('grunt-contrib-copy'),
+  grunt.loadNpmTasks('grunt-contrib-sass'),
+  grunt.loadNpmTasks('grunt-contrib-concat'),
+  grunt.loadNpmTasks('grunt-contrib-imagemin'),
+  grunt.loadNpmTasks('grunt-contrib-htmlmin'),
+
+  grunt.registerTask('build', ['less', 'uglify', 'imagemin', 'htmlmin'])
 }

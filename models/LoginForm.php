@@ -26,6 +26,8 @@ class LoginForm extends Model
     public function rules()
     {
         return [
+            // username and password are both required
+            [[self::USERNAME, self::USER_PASS], 'required'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -33,8 +35,6 @@ class LoginForm extends Model
 
             [[self::USERNAME], 'match', 'pattern' => "/^.{1,45}$/", 'message' => 'Mínimo 1 caracter'],
             [[self::USERNAME], 'email', 'message' => 'Tiene que ser un correo válido.'],
-            [[self::USERNAME], 'required', 'message' => 'El usuario es un campo requerido.'],
-            [[self::USER_PASS], 'required', 'message' => 'La contraseña es un campo requerido.'],
 
         ];
     }

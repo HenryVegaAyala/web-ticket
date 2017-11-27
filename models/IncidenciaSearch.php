@@ -17,30 +17,7 @@ class IncidenciaSearch extends Incidencia
     {
         return [
             [['id', 'estado'], 'integer'],
-            [
-                [
-                    'cliente',
-                    'notas',
-                    'resumen',
-                    'servico',
-                    'ci',
-                    'fecha_deseada',
-                    'impacto',
-                    'urgencia',
-                    'prioridad',
-                    'tipo_incidencia',
-                    'fuente_reportada',
-                    'fecha_digitada',
-                    'fecha_modificada',
-                    'fecha_eliminada',
-                    'usuario_digitado',
-                    'usuario_modificado',
-                    'usuario_eliminado',
-                    'ip',
-                    'host',
-                ],
-                'safe',
-            ],
+            [['empresa', 'cliente', 'contacto', 'notas', 'resumen', 'servico', 'ci', 'fecha_deseada', 'impacto', 'urgencia', 'prioridad', 'tipo_incidencia', 'fuente_reportada', 'fecha_digitada', 'fecha_modificada', 'fecha_eliminada', 'usuario_digitado', 'usuario_modificado', 'usuario_eliminado', 'ip', 'host'], 'safe'],
         ];
     }
 
@@ -87,7 +64,9 @@ class IncidenciaSearch extends Incidencia
             'estado' => $this->estado,
         ]);
 
-        $query->andFilterWhere(['like', 'cliente', $this->cliente])
+        $query->andFilterWhere(['like', 'empresa', $this->empresa])
+            ->andFilterWhere(['like', 'cliente', $this->cliente])
+            ->andFilterWhere(['like', 'contacto', $this->contacto])
             ->andFilterWhere(['like', 'notas', $this->notas])
             ->andFilterWhere(['like', 'resumen', $this->resumen])
             ->andFilterWhere(['like', 'servico', $this->servico])
