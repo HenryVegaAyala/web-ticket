@@ -13,12 +13,12 @@ use yii\base\Model;
  */
 class LoginForm extends Model
 {
+    const USERNAME = 'username';
+    const USER_PASS = 'password';
     public $username;
     public $password;
     public $rememberMe = true;
-
-    private $_user = false;
-
+    private $user = false;
 
     /**
      * @return array the validation rules.
@@ -27,11 +27,26 @@ class LoginForm extends Model
     {
         return [
             // username and password are both required
-            [['username', 'password'], 'required'],
+            [[self::USERNAME, self::USER_PASS], 'required'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
-            ['password', 'validatePassword'],
+            [self::USER_PASS, 'validatePassword'],
+
+            [[self::USERNAME], 'match', 'pattern' => "/^.{1,45}$/", 'message' => 'Mínimo 1 caracter'],
+            [[self::USERNAME], 'email', 'message' => 'Tiene que ser un correo válido.'],
+
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            self::USERNAME => 'Usuario',
+            self::USER_PASS => 'Contraseña',
         ];
     }
 
@@ -40,15 +55,16 @@ class LoginForm extends Model
      * This method serves as the inline validation for password.
      *
      * @param string $attribute the attribute currently being validated
-     * @param array $params the additional name-value pairs given in the rule
      */
-    public function validatePassword($attribute, $params)
+    public function validatePassword($attribute)
     {
         if (!$this->hasErrors()) {
-            $user = $this->getUser();
-
-            if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+            if (!$this->getUser()) {
+                $this->addError($attribute, 'Usuario ingresado es incorrecto.');
+            } elseif (!$this->getUser()->validatePassword($this->password)) {
+                $this->addError($attribute, 'Contraseña ingresada es incorrecta.');
+            } elseif (!$this->getUser() && !$this->getUser()->validatePassword($this->password)) {
+                $this->addError($attribute, 'Usuario ó Contraseña Incorrecta.');
             }
         }
     }
@@ -60,8 +76,9 @@ class LoginForm extends Model
     public function login()
     {
         if ($this->validate()) {
-            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600*24*30 : 0);
+            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         }
+
         return false;
     }
 
@@ -72,10 +89,10 @@ class LoginForm extends Model
      */
     public function getUser()
     {
-        if ($this->_user === false) {
-            $this->_user = User::findByUsername($this->username);
+        if ($this->user === false) {
+            $this->user = User::findByUsername($this->username, true);
         }
 
-        return $this->_user;
+        return $this->user;
     }
 }

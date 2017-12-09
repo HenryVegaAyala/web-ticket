@@ -29,4 +29,5 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 
-workspace.xml
+/.idea/
+/.idea/workspace.xml
