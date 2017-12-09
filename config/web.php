@@ -59,14 +59,11 @@ $config = [
         'db' => $db,
 
         'urlManager' => [
-            //'class' => 'yii\web\UrlManager',
-            //'baseUrl' => '/',
-            //'enablePrettyUrl' => true,
-            //'showScriptName' => false,
-            //'enableStrictParsing' => true,
+            'class' => 'yii\web\UrlManager',
+            'baseUrl' => '/',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'enableStrictParsing' => false,
+            'enableStrictParsing' => true,
             'rules' => [
 
                 /**Sesion**/
