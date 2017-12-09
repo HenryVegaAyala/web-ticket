@@ -1,116 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b2a6df2-ecfb-438f-b47f-3c908808887c" name="Default" comment="Ajustes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/CommandController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/GenerateController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/ClienteController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/IncidenciaController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/Notificaciones.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/Utils.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Cliente.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/ClienteSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Empresa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Incidencia.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/IncidenciaSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/UserSearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_import.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_personal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_personalu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_proveedor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/details.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/import.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/lista.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/personal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/personalu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/personalv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/proveedor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/_update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/activity.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_changePassword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_export.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/change.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/export.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/bootstrap/dist/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/css/font-awesome.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/repository/font-awesome/scss/font-awesome.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commands/HelloController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/ContactForm.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/about.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/contact.php" afterPath="" />
+    <list default="true" id="1b2a6df2-ecfb-438f-b47f-3c908808887c" name="Default" comment="Revert &quot;Ajustes&quot;&#10;&#10;This reverts commit 8c9df06d052f769dfa0e85be28e2a6a538490de2.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/HelloController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/ContactForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/site/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/site/contact.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commands/CommandController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commands/GenerateController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/ClienteController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/IncidenciaController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/UserController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers/Notificaciones.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers/Utils.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/Cliente.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/ClienteSearch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/Empresa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/Incidencia.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/IncidenciaSearch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/UserSearch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/_form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/_import.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/_personal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/_personalu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/_proveedor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/_update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/create.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/details.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/import.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/lista.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/personal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/personalu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/personalv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/proveedor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/cliente/view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/incidencia/_form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/incidencia/_update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/incidencia/create.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/incidencia/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/incidencia/update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/layouts/activity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/layouts/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/layouts/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/_changePassword.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/_export.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/_form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/_update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/change.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/create.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/export.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/bootstrap/dist/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/HELP-US-OUT.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/css/font-awesome.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/repository/font-awesome/scss/font-awesome.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/AppAsset.php" afterPath="$PROJECT_DIR$/assets/AppAsset.php" />
@@ -136,31 +136,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="console.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/console.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="561">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yii" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <marker date="1512836363115" expanded="true" signature="97:350" ph="..." />
+                <marker date="1512836363115" expanded="true" signature="314:350" ph="..." />
+                <marker date="1512836363115" expanded="true" signature="337:350" ph="..." />
+                <marker date="1512836363115" expanded="true" signature="1697:2213" ph="..." />
+                <marker date="1512836363115" expanded="true" signature="1771:1955" ph="..." />
+                <marker date="1512836363115" expanded="true" signature="2028:2210" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.php">
+      <file leaf-file-name="app.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,8 +176,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -185,6 +192,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ba947f4c4fac0875d4366ac9ff11884b5e634e1b" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -193,6 +205,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/yii" />
         <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/config/web.php" />
+        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -503,6 +517,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1b2a6df2-ecfb-438f-b47f-3c908808887c" name="Default" comment="" />
@@ -510,7 +527,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512803040820</updated>
-      <workItem from="1512803043649" duration="4204000" />
+      <workItem from="1512803043649" duration="8247000" />
     </task>
     <task id="LOCAL-00001" summary="Ajustes">
       <created>1512803803631</created>
@@ -554,23 +571,31 @@
       <option name="project" value="LOCAL" />
       <updated>1512833548880</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajustes">
+      <created>1512834235782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512834235782</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4204000" />
+    <option name="totallyTimeSpent" value="8247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="NativeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34860885" sideWeight="0.5060514" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="NativeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34860885" sideWeight="0.49394855" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -588,6 +613,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -595,27 +638,15 @@
     <MESSAGE value="Ajustes" />
     <option name="LAST_COMMIT_MESSAGE" value="Ajustes" />
   </component>
+  <component name="WindowStateProjectService">
+    <state width="178" height="164" key="Git.Branch.Popup" />
+    <state width="178" height="164" key="Git.Branch.Popup/0.0.1366.768" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/console.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -640,10 +671,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/console.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <marker date="1512836363115" expanded="true" signature="97:350" ph="..." />
+            <marker date="1512836363115" expanded="true" signature="314:350" ph="..." />
+            <marker date="1512836363115" expanded="true" signature="337:350" ph="..." />
+            <marker date="1512836363115" expanded="true" signature="1697:2213" ph="..." />
+            <marker date="1512836363115" expanded="true" signature="1771:1955" ph="..." />
+            <marker date="1512836363115" expanded="true" signature="2028:2210" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
