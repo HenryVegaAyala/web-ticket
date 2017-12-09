@@ -2,135 +2,73 @@
 
 namespace app\models;
 
-use Yii;
-use yii\db\ActiveRecord;
-use yii\web\IdentityInterface;
-
-/**
- * This is the model class for table "usuario".
- *
- * @property integer $id
- * @property integer $cliente_id
- * @property integer $empresa_id
- * @property string $nombres
- * @property string $correo
- * @property string $contrasena
- * @property string $authKey
- * @property string $accessToken
- * @property integer $estado
- * @property string $fecha_digitada
- * @property string $fecha_modificada
- * @property string $fecha_eliminada
- * @property string $usuario_digitado
- * @property string $usuario_modificado
- * @property string $usuario_eliminado
- * @property string $ip
- * @property string $host
- * @property integer $type
- */
-class User extends ActiveRecord implements IdentityInterface
+class User extends \yii\base\Object implements \yii\web\IdentityInterface
 {
-    const MESSAGE_MIN_6_PW = "Mínimo 6 digitos para la contraseña.";
-    const MESSAGE_MIN_6_PW_REP = "Mínimo 6 digitos para la contraseña repetida.";
-    const MESSAGE_COMPARE = "Las contraseñas no coinciden.";
-    const FIELD_VALID = "El campo correo debe de ser válido.";
-    const MESSAGE_MIN_3 = "Mínimo 3 caracteres del correo corporativo.";
+    public $id;
+    public $username;
+    public $password;
+    public $authKey;
+    public $accessToken;
 
-    public $contrasena_desc;
-    public $change_password;
-    public $change_password_repeat;
+    private static $users = [
+        '100' => [
+            'id' => '100',
+            'username' => 'admin',
+            'password' => 'admin',
+            'authKey' => 'test100key',
+            'accessToken' => '100-token',
+        ],
+        '101' => [
+            'id' => '101',
+            'username' => 'demo',
+            'password' => 'demo',
+            'authKey' => 'test101key',
+            'accessToken' => '101-token',
+        ],
+    ];
 
-    /**
-     * @inheritdoc
-     */
-    public static function tableName()
-    {
-        return 'usuario';
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function rules()
-    {
-        return [
-            [['estado'], 'integer'],
-            [['nombres', 'contrasena', 'contrasena_desc', 'correo', 'estado', 'type'], 'required'],
-            ['correo', 'unique'],
-            [['correo'], 'match', 'pattern' => "/^.{3,45}$/", 'message' => self::MESSAGE_MIN_3],
-            [['correo'], 'email', 'message' => self::FIELD_VALID],
-            ['contrasena', 'match', 'pattern' => "/^.{6,255}$/", 'message' => self::MESSAGE_MIN_6_PW],
-            ['contrasena_desc', 'match', 'pattern' => "/^.{6,255}$/", 'message' => self::MESSAGE_MIN_6_PW_REP],
-
-            ['contrasena_desc', 'compare', 'compareAttribute' => 'contrasena', 'message' => self::MESSAGE_COMPARE],
-
-            ['change_password_repeat', 'compare', 'compareAttribute' => 'change_password', 'message' => self::MESSAGE_COMPARE],
-        ];
-    }
 
     /**
      * @inheritdoc
-     */
-    public function attributeLabels()
-    {
-        return [
-            'id' => 'ID',
-            'cliente_id' => 'Cliente ID',
-            'empresa_id' => 'Empresa ID',
-            'nombres' => 'Nombres',
-            'correo' => 'Correo Corporativo',
-            'contrasena' => 'Contraseña',
-            'change_password' => 'Contraseña',
-            'contrasena_desc' => 'Repetir Contraseña',
-            'change_password_repeat' => 'Repetir Contraseña',
-            'authKey' => 'Auth Key',
-            'accessToken' => 'Access Token',
-            'estado' => 'Estado',
-            'fecha_digitada' => 'Fecha Digitada',
-            'fecha_modificada' => 'Fecha Modificada',
-            'fecha_eliminada' => 'Fecha Eliminada',
-            'usuario_digitado' => 'Usuario Digitado',
-            'usuario_modificado' => 'Usuario Modificado',
-            'usuario_eliminado' => 'Usuario Eliminado',
-            'ip' => 'Ip',
-            'host' => 'Host',
-            'type' => 'Tipo de Usuario',
-        ];
-    }
-
-    /**
-     * @param int|string $id
-     * @return User|array|null|ActiveRecord
      */
     public static function findIdentity($id)
     {
-        return static::find()->select([
-            'id',
-            'cliente_id',
-            'empresa_id',
-            'nombres',
-            'correo',
-            'type',
-        ])->where('id = :id', [':id' => $id])->one();
+        return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;
     }
 
     /**
-     * @param mixed $token
-     * @param null $type
-     * @return User|array|null|ActiveRecord
+     * @inheritdoc
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        return static::find()->select([
-            'id',
-            'cliente_id',
-            'nombres',
-            'correo',
-        ])->where('accessToken = :token', [':token' => $token])->one();
+        foreach (self::$users as $user) {
+            if ($user['accessToken'] === $token) {
+                return new static($user);
+            }
+        }
+
+        return null;
     }
 
     /**
-     * @return int
+     * Finds user by username
+     *
+     * @param string $username
+     * @return static|null
+     */
+    public static function findByUsername($username)
+    {
+        foreach (self::$users as $user) {
+            if (strcasecmp($user['username'], $username) === 0) {
+                return new static($user);
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @inheritdoc
      */
     public function getId()
     {
@@ -138,7 +76,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * @return string
+     * @inheritdoc
      */
     public function getAuthKey()
     {
@@ -146,47 +84,21 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     * @param string $authKey
-     * @return bool
+     * @inheritdoc
      */
     public function validateAuthKey($authKey)
     {
-        return $this->getAuthKey() === $authKey;
+        return $this->authKey === $authKey;
     }
 
     /**
-     * @param $username
-     * @param $estado
-     * @return User|array|null|ActiveRecord
-     */
-    public static function findByUsername($username, $estado)
-    {
-        return self::find()->select([
-            'id',
-            'nombres',
-            'correo',
-            'cliente_id',
-            'contrasena',
-        ])->where([
-            'correo' => $username,
-            'estado' => (int)$estado,
-        ])->one();
-    }
-
-    /**
-     * @param $password
-     * @return bool
+     * Validates password
+     *
+     * @param string $password password to validate
+     * @return bool if password provided is valid for current user
      */
     public function validatePassword($password)
     {
-        return Yii::$app->getSecurity()->validatePassword($password, $this->contrasena);
-    }
-
-    /**
-     * @param $password
-     */
-    public function setPassword($password)
-    {
-        $this->contrasena = Yii::$app->getSecurity()->generatePasswordHash($password);
+        return $this->password === $password;
     }
 }
