@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/../eqatu/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/../eqatu/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/behat/gherkin" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/inputmask" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/punycode" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/typeahead.js" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/yii2-pjax" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/cebe/markdown" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/codeception/base" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/codeception/specify" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/codeception/verify" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/container-interop/container-interop" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/ezyang/htmlpurifier" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/intervention/httpauth" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mbrowniebytes/yii2-clean-vendors" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mrclay/jsmin-php" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mrclay/minify" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mrclay/props-dic" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/myclabs/deep-copy" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/natxet/CssMin" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phar-io/manifest" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phar-io/version" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpdocumentor/reflection-common" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpspec/php-diff" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/pimple/pimple" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/psr/container" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/code-unit-reverse-lookup" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/object-enumerator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/object-reflector" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/resource-operations" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/skeeks/yii2-assets-auto-compress" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/stecman/symfony-console-completion" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/browser-kit" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/css-selector" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/dom-crawler" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/finder" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/tedivm/jshrink" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/theseer/tokenizer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/tubalmartin/cssmin" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-bootstrap" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-composer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-debug" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-faker" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-httpclient" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-swiftmailer" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/behat/gherkin" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/inputmask" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/punycode" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/typeahead.js" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/bower/yii2-pjax" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/cebe/markdown" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/codeception/base" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/codeception/specify" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/codeception/verify" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/container-interop/container-interop" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/ezyang/htmlpurifier" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/intervention/httpauth" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mbrowniebytes/yii2-clean-vendors" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mrclay/jsmin-php" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mrclay/minify" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/mrclay/props-dic" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/myclabs/deep-copy" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/natxet/CssMin" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phar-io/manifest" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phar-io/version" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpdocumentor/reflection-common" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpspec/php-diff" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/pimple/pimple" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/psr/container" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/code-unit-reverse-lookup" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/object-enumerator" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/object-reflector" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/resource-operations" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/skeeks/yii2-assets-auto-compress" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/stecman/symfony-console-completion" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/browser-kit" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/css-selector" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/debug" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/dom-crawler" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/finder" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/tedivm/jshrink" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/theseer/tokenizer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/tubalmartin/cssmin" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-bootstrap" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-composer" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-debug" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-faker" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-httpclient" />
+          <root url="file://$MODULE_DIR$/../eqatu/vendor/yiisoft/yii2-swiftmailer" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
