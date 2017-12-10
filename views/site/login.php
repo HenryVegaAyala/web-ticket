@@ -7,41 +7,13 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Login';
-$this->params['breadcrumbs'][] = $this->title;
-?>
-<div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>Please fill out the following fields to login:</p>
-
-    <?php $form = ActiveForm::begin([
-        'id' => 'login-form',
-        'layout' => 'horizontal',
-        'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-1 control-label'],
-        ],
-    ]); ?>
-
-        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
-
-        <?= $form->field($model, 'password')->passwordInput() ?>
-
-        <?= $form->field($model, 'rememberMe')->checkbox([
-            'template' => "<div class=\"col-lg-offset-1 col-lg-3\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
-        ]) ?>
-
-        <div class="form-group">
-            <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-            </div>
-        </div>
-
-    <?php ActiveForm::end(); ?>
-
-    <div class="col-lg-offset-1" style="color:#999;">
-        You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-        To modify the username/password, please check out the code <code>app\models\User::$users</code>.
-    </div>
-</div>
+$this->title = 'Sistema de Ticket - Iniciar Sesión';
+?> <div><a class="hiddenanchor" id="signin"></a><div class="login_wrapper"><div class="animate form login_form"><section class="login_content"> <?php $form = ActiveForm::begin(); ?> <h1>Sistema de Ticket</h1><div> <?= $form->field($model, 'username')->textInput([
+                        'autofocus' => true,
+                        'class' => 'form-control ',
+                        'placeholder' => 'Usuario',
+                    ])->label(false) ?> </div><div> <?= $form->field($model, 'password')->passwordInput([
+                        'class' => 'form-control',
+                        'placeholder' => 'Contraseña',
+                    ])->label(false) ?> </div><div> <?= Html::submitButton('Iniciar Sesión',
+                        ['class' => 'btn btn-default submit', 'name' => 'login-button']) ?> </div> <?php ActiveForm::end(); ?> <div class="clearfix"></div><div class="separator"><div class="clearfix"></div><br><div><p>©2017 Todos los Derechos Reservador por Sistema de Ticket.</p></div></div></section></div></div></div>

@@ -2,9 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cdd115a-9dc1-471a-a306-b6f6f7dd9bc3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commands/HelloController.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/Notificaciones.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/Utils.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Cliente.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/ClienteSearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Empresa.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Incidencia.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/IncidenciaSearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/UserSearch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_import.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_personal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_personalu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_proveedor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/_update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/details.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/import.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/lista.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/personal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/personalu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/personalv.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/proveedor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cliente/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/_update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/incidencia/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/activity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_changePassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_export.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/_update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/change.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/export.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/AppAsset.php" afterPath="$PROJECT_DIR$/assets/AppAsset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/db.php" afterPath="$PROJECT_DIR$/config/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/LoginForm.php" afterPath="$PROJECT_DIR$/models/LoginForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.php" afterPath="$PROJECT_DIR$/models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.php" afterPath="$PROJECT_DIR$/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/error.php" afterPath="$PROJECT_DIR$/views/site/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/index.php" afterPath="$PROJECT_DIR$/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/login.php" afterPath="$PROJECT_DIR$/views/site/login.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +67,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.log" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.log" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -40,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppAsset.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppAsset.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -70,8 +117,8 @@
       <list>
         <option value="$PROJECT_DIR$/config/web.php" />
         <option value="$PROJECT_DIR$/config/console.php" />
-        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
         <option value="$PROJECT_DIR$/assets/AppAsset.php" />
+        <option value="$PROJECT_DIR$/runtime/logs/app.log" />
       </list>
     </option>
   </component>
@@ -206,7 +253,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -220,25 +267,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-ticket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-ticket" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,7 +285,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-ticket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web-ticket" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,6 +320,11 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="VCS changed files" />
     <property name="SearchEverywhereHistoryKey" value=".lo&#9;FILE&#9;file://C:/wamp64/www/web-ticket/runtime/logs/app.log" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\hpveg\AppData\Roaming\npm\node_modules\eslint" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -427,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512846949511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ticket">
+      <created>1512876165317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512876165317</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2118000" />
+    <option name="totallyTimeSpent" value="2740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -441,7 +504,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030257" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="NativeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -517,18 +580,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
+    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
+    <entry file="file://$PROJECT_DIR$/runtime/logs/app.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
